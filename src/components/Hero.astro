@@ -68,7 +68,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
     {/* Times read */}
     <div class='flex items-center gap-1'>
       <Icon name='time' class='size-5' />
-      {String(remarkPluginFrontmatter.minutesRead || '').replace('min read', '分钟阅读')}
+      {String(remarkPluginFrontmatter.minutesRead || '').replace(/min(?: read)?\b/, '分钟阅读')}
     </div>
     {
       // Language

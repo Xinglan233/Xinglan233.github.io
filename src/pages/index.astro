@@ -1,8 +1,8 @@
 ---
-import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import { Button, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/BaseLayout.astro'
+import PostPreview from '@/components/PostPreview.astro'
 
 const posts = sortMDByDate(await getBlogCollection()).slice(0, 5)
 ---
@@ -22,13 +22,7 @@ const posts = sortMDByDate(await getBlogCollection()).slice(0, 5)
         <h2>最近更新</h2><a href='/blog'>全部文章 <span aria-hidden='true'>↗</span></a>
       </div>
       <ul class='flex flex-col gap-y-3'>
-        {
-          posts.map((post) => (
-            <li>
-              <PostPreview {post} detailed />
-            </li>
-          ))
-        }
+        {posts.map((post) => <PostPreview {post} detailed />)}
       </ul>
     </section>
     <div class='animate bottom-note'>
