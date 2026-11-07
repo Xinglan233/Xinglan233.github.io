@@ -1,4 +1,4 @@
-# Xinglan233 的博客
+# 星闌的博客
 
 地址：https://xinglan233.github.io
 

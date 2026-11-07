@@ -1,8 +1,8 @@
 import type { Config, IntegrationUserConfig, ThemeUserConfig } from 'astro-pure/types'
 
 export const theme: ThemeUserConfig = {
-  title: 'Xinglan233',
-  author: 'Xinglan233',
+  title: '星闌',
+  author: '星闌',
   description: '记录、思考与日常。',
   favicon: '/favicon.svg',
   socialCard: '/social-card.png',
@@ -12,7 +12,7 @@ export const theme: ThemeUserConfig = {
     dateLocale: 'zh-CN',
     dateOptions: { year: 'numeric', month: 'long', day: 'numeric' }
   },
-  logo: { src: '/favicon.svg', alt: 'Xinglan233' },
+  logo: { src: '/favicon.svg', alt: '星闌' },
   titleDelimiter: '·',
   prerender: true,
   npmCDN: 'https://cdn.jsdelivr.net/npm',
