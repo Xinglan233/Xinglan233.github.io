@@ -1,6 +1,6 @@
 ---
 title: '构建产物去哪了：认识GitHub Actions的存储'
-description: '了解GitHub Actions构建产物的类型、保留期限、上传时机与清理方法。'
+description: '一次自动构建结束后，程序包和测试报告不一定会留在运行构建的机器上。为了让人之后还能下载它们，工作流可以把文件上传为构建产物，也就是artifact。'
 publishDate: 2026-11-12T15:33:41+08:00
 tags: ['软件工程', '持续集成', 'GitHub Actions', '构建产物', '存储管理']
 language: '中文'
